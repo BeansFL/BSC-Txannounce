@@ -62,19 +62,3 @@ else if Config.NotificationName == "mythic-notify" then
     end
 
 
-    function SendKickedMessage(msg)
-    
-        -- You can comment this out. only for testing purpose
-        SetNotificationTextEntry('STRING')
-        AddTextComponentString(msg)
-        DrawNotification(0,1) 
-        TriggerEvent("pNotify:SendNotification", {text = "<span style='font-weight: 900'>"Spieler gekickt" </span>",
-        layout = "centerLeft",
-        timeout = 2000,
-        progressBar = false,
-        type = "error",
-        animation = {
-            open = "gta_effects_fade_in",
-            close = "gta_effects_fade_out"
-        }})
-end
