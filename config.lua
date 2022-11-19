@@ -61,20 +61,6 @@ else if Config.NotificationName == "mythic-notify" then
 
     end
 
-else if Config.NotificationName == "p-notify" then
-
-    function SendRestartMessage(timeLeft)
-        TriggerEvent("pNotify:SendNotification", {text = "<span style='font-weight: 900'>" Der Server wird in" .. timeLeft .. "neu gestartet" </span>",
-        layout = "centerLeft",
-        timeout = 2000,
-        progressBar = false,
-        type = "error",
-        animation = {
-            open = "gta_effects_fade_in",
-            close = "gta_effects_fade_out"
-        }})
-end 
-    end
 
     function SendKickedMessage(msg)
     
